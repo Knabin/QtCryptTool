@@ -3,7 +3,7 @@
 #include <QObject>
 
 enum class CryptType {
-	Crypt,
+	Encrypt,
 	Decrypt,
 	None,
 };
@@ -23,5 +23,12 @@ struct crypt_info {
 
 class QtCryptTool : public QObject
 {
+	Q_OBJECT
+
+public:
+	QtCryptTool(QObject* parent = Q_NULLPTR);
+	~QtCryptTool();
+
+	void Start(const crypt_info& cryptInfo);
 };
 

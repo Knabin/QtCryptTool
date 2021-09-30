@@ -89,10 +89,12 @@
     <ClCompile Include="CommandParser.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="QtCryptTool.cpp" />
+    <ClCompile Include="Utils\SimpleCrypt.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Utils\SimpleCrypt.h" />
     <QtMoc Include="CommandParser.h" />
-    <ClInclude Include="QtCryptTool.h" />
+    <QtMoc Include="QtCryptTool.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
